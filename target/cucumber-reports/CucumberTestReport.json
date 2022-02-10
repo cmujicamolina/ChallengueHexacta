@@ -1,0 +1,154 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 15,
+        "name": "Valid customer login",
+        "description": "",
+        "id": "user-login;valid-customer-login;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 698597500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginUserSteps.tearDown(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 52800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AddProductsSteps.tearDown(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 37300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "SortProductSteps.tearDown(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 107000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BotonSteps.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3834641800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the customer is on the main page",
+            "match": {
+              "location": "LoginUserSteps.elClienteSeEncuentraEnLaPaginaDeBusqueda()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 223792100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "enter user standard_user",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 11
+                }
+              ],
+              "location": "LoginUserSteps.enterUserUser(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 178137500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "enter password secret_sauce",
+            "match": {
+              "arguments": [
+                {
+                  "val": "secret_sauce",
+                  "offset": 15
+                }
+              ],
+              "location": "LoginUserSteps.enterPasswordPassword(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 226539600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the customer click the login button",
+            "match": {
+              "location": "LoginUserSteps.theCustomerClickTheLoginButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 86204300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "page shows product title",
+            "match": {
+              "location": "LoginUserSteps.pageShowsProductTitle()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@ValidLogin"
+          },
+          {
+            "line": 1,
+            "name": "@SmokeTest"
+          }
+        ]
+      }
+    ],
+    "name": "User login",
+    "description": "",
+    "id": "user-login",
+    "keyword": "Feature",
+    "uri": "LoginUser.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@SmokeTest"
+      }
+    ]
+  }
+]
